@@ -1,0 +1,396 @@
+/*==========  Font face  ==========*/
+
+  @font-face {
+    font-family: 'Gibson';
+    src: url('../font/Gibson-Regular.eot');
+    src: url('../font/Gibson-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../font/Gibson-Regular.woff') format('woff'),
+      url('../font/Gibson-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Gibson-SemiBold';
+    src: url('../font/Gibson-SemiBold.eot');
+    src: url('../font/Gibson-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('../font/Gibson-SemiBold.woff') format('woff'),
+      url('../font/Gibson-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Butler';
+    src: url('../font/Butler.eot');
+    src: url('../font/Butler.eot?#iefix') format('embedded-opentype'),
+      url('../font/Butler.woff') format('woff'),
+      url('../font/Butler.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Butler-Light';
+    src: url('../font/Butler-Light.eot');
+    src: url('../font/Butler-Light.eot?#iefix') format('embedded-opentype'),
+      url('../font/Butler-Light.woff') format('woff'),
+      url('../font/Butler-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/*==========  Geral  ==========*/
+  ::selection {
+    background: #BBA867;
+  }
+
+  body {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    font-family: 'Gibson';
+    font-weight: normal;
+  }
+
+  ul, li {
+    margin: 0;
+  }
+
+  strong {
+    font-family: 'Butler';
+    font-weight: normal;
+  }
+
+  h1{
+    font-family: 'Butler-Light';
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 1px; 
+  }
+
+  p{
+    font-size: 14px;
+    line-height: 22px;
+    color: #6E6E6E;
+    letter-spacing: 1px;
+  }
+  
+
+/*==========  Topo  ==========*/
+
+  #topo {
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+  }
+
+  #topo img {
+    width: 140px;
+  }
+
+  #topo .navbar-nav>li>a {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #6E6E6E;
+    letter-spacing: 2px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+   }
+
+  #topo .nav>li>a:hover {
+    text-decoration: none;
+    background-color: inherit;
+    color: #000;
+   }
+
+  #topo .nav>li>a svg g g g polyline {
+    stroke:#6E6E6E;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+   }
+
+  #topo .nav>li>a:hover svg g g g polyline {
+    stroke:#000;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+   }
+
+  #topo .nav>li>a:focus {
+    background-color: inherit;
+  }
+
+  .shape-color {
+    stroke: #000!important;;
+  }
+
+  #topo .icon-bar {
+    background-color: #000; 
+  }
+
+  #topo .navbar-toggle {
+    float:left;
+    margin-top: 11px;
+  }
+
+  #topo .center-block {
+    margin-left: 30%;
+  }
+
+  #topo .bg-menu {
+    background-color: #FAFAFA;
+  }
+
+  #topo .arrow {
+    visibility: hidden;
+  }
+
+  #topo .navbar-toggle .icon-bar:nth-of-type(2) {
+      top: 1px;
+  }
+
+  #topo .navbar-toggle .icon-bar:nth-of-type(3) {
+      top: 2px;
+  }
+
+  #topo .navbar-toggle .icon-bar {
+      position: relative;
+      transition: all 500ms ease-in-out;
+      -webkit-transition: all 500ms ease-in-out;
+  }
+
+  #topo .navbar-toggle.active .icon-bar:nth-of-type(1) {
+      top: 6px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+  }
+
+  #topo .navbar-toggle.active .icon-bar:nth-of-type(2) {
+      background-color: transparent;
+  }
+
+  #topo .navbar-toggle.active .icon-bar:nth-of-type(3) {
+      top: -6px;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+  }
+
+/*==========  Nav  ==========*/
+
+  #sub-menu .submenu-itens li {
+    margin: 0 15px;
+  }
+
+  #sub-menu .submenu-itens p {
+    font-size: 14px;
+  }
+
+  #sub-menu .submenu-itens a {
+    text-decoration: none;
+  }
+  .linha {
+    width: 1px;
+    height: 120px;
+    background-color: #DEDEDE;
+    padding: 0;
+  }
+
+/*==========  Banner  ==========*/
+
+  #banner{
+      position: relative;
+      background: url("../img/img-banner-home.jpg")  no-repeat center / cover;
+      height: 300px;
+      z-index: -1;
+  }
+  
+  #banner img {
+      position: relative;
+  }
+
+/*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 375px) {
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+    
+    /*==========  Geral  ==========*/
+      h1{
+        font-size: 46px;
+        line-height: 54px;
+      }
+
+      p{
+        font-size: 16px;
+        line-height: 26px;
+      }
+
+    /*==========  Topo  ==========*/
+      .submenu {
+        background-color: #eee;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        left: 0;
+        z-index: 0;
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        transition: all 0.5s ease;
+        visibility: hidden;
+      }
+
+      .submenu.anima {
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        visibility: visible;
+      }
+
+      .submenu-itens>li {
+        list-style: none;
+        position: relative;
+        display: block;
+        float: left;
+      }
+
+      #topo .menu-casamento {
+        color: #000!important;
+      }
+
+      #topo .arrow {
+        position: relative;
+        visibility: visible;
+        top: -2px;
+        left: 2px;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+      }
+
+      #topo .arrow.giro {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+      }
+
+      #topo .center-block {
+        margin-left: auto;
+      }
+
+      #topo .bg-menu {
+        background-color: #fff;
+      }
+
+      #topo .center {
+        margin: auto;
+        width: 92%;
+      }
+
+    /*==========  Banner  ==========*/
+      #banner{
+        height: 450px;
+      }
+      
+      #banner img {
+        -webkit-animation: seta 1000ms linear infinite alternate; 
+        animation: seta 1000ms linear infinite alternate;
+      }
+
+      @-webkit-keyframes seta {
+          0%   {transform: translateY(70px);}
+          100% {transform: translateY(40px);}
+      }
+
+      /* Standard syntax */
+      @keyframes seta {
+          0%   {transform: translateY(70px);}
+          100% {transform: translateY(40px);}
+      }
+    
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    /*==========  Geral  ==========*/
+      h1{
+        font-size: 46px;
+        line-height: 52px;
+      }
+
+    /*==========  Topo  ==========*/
+      #topo .center {
+        margin: auto;
+        width: 70%;
+      }
+
+    /*==========  Banner  ==========*/
+      #banner{
+        height: 550px;
+      }
+
+      #banner img {
+        -webkit-animation: seta 1000ms linear infinite alternate; 
+        animation: seta 1000ms linear infinite alternate;
+      }
+
+      @-webkit-keyframes seta {
+          0%   {transform: translateY(130px);}
+          100% {transform: translateY(100px);}
+      }
+
+      /* Standard syntax */
+      @keyframes seta {
+          0%   {transform: translateY(130px);}
+          100% {transform: translateY(100px);}
+      }
+    
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    /*==========  Geral  ==========*/
+      h1{
+        font-size: 56px;
+        line-height: 60px;
+      }
+    
+    /*==========  Topo  ==========*/
+      #topo .center {
+        margin: auto;
+        width: 58%;
+      }
+
+    /*==========  Banner  ==========*/
+      #banner{
+        height: 650px;
+      }
+
+      #banner img {
+        -webkit-animation: seta 1000ms linear infinite alternate; 
+        animation: seta 1000ms linear infinite alternate;
+      }
+
+      @-webkit-keyframes seta {
+          0%   {transform: translateY(160px);}
+          100% {transform: translateY(140px);}
+      }
+
+      /* Standard syntax */
+      @keyframes seta {
+          0%   {transform: translateY(160px);}
+          100% {transform: translateY(140px);}
+      }
+
+    }
