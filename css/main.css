@@ -99,12 +99,28 @@
     -webkit-transition: all 0.5s ease;
    }
 
+  #topo .navbar-nav>li>a::before {
+    display: inline-block;
+    /*z-index: -1;*/
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background-color: rgba(187, 168, 0, 0.3);
+   }
+  
+  #topo .navbar-nav>li>a:hover::before {
+    height: 5px;
+   }
+
   #topo .nav>li>a:hover {
     text-decoration: none;
     background-color: inherit;
     color: #000;
    }
-
+   
   #topo .nav>li>a svg g g g polyline {
     stroke:#6E6E6E;
     transition: all 0.5s ease;
