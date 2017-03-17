@@ -227,12 +227,13 @@
 
   #banner{
       position: relative;
-      background: url("../img/img-banner-home.jpg")  no-repeat center / cover;
+      background: url("../img/img-banner-home.jpg")  no-repeat center;
+      background-size:cover;
       height: 300px;
       z-index: -1;
   }
   
-  #banner img {
+  #banner svg {
       position: relative;
       transform: translateY(140px);
   }
@@ -328,7 +329,7 @@
         height: 450px;
       }
       
-      #banner img {
+      #banner svg {
         -webkit-animation: seta 1000ms linear infinite alternate; 
         animation: seta 1000ms linear infinite alternate;
         transform: translateY(70px);
@@ -368,7 +369,7 @@
         height: 550px;
       }
 
-      #banner img {
+      #banner svg {
         -webkit-animation: seta 1000ms linear infinite alternate; 
         animation: seta 1000ms linear infinite alternate;
         transform: translateY(130px);
@@ -407,7 +408,7 @@
         height: 650px;
       }
 
-      #banner img {
+      #banner svg {
         -webkit-animation: seta 1000ms linear infinite alternate; 
         animation: seta 1000ms linear infinite alternate;
         transform: translateY(160px);
