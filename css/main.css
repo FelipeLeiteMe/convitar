@@ -145,7 +145,6 @@
 
   #topo .center {
     margin: auto;
-    width: 58%;
   }
 
   #topo .shape-color {
@@ -216,6 +215,7 @@
   #sub-menu .submenu-itens a {
     text-decoration: none;
   }
+  
   .linha {
     width: 1px;
     height: 120px;
