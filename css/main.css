@@ -143,7 +143,12 @@
     background-color: inherit;
   }
 
-  .shape-color {
+  #topo .center {
+    margin: auto;
+    width: 92%;
+  }
+
+  #topo .shape-color {
     stroke: #000!important;;
   }
 
