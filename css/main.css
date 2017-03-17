@@ -229,6 +229,7 @@
   
   #banner img {
       position: relative;
+      transform: translateY(140px);
   }
 
 /*==========  Mobile First Method  ==========*/
