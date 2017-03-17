@@ -68,6 +68,16 @@
     font-size: 28px;
     line-height: 32px;
     letter-spacing: 1px; 
+    color: #2D2D2D;
+  }
+
+  h3 {
+    font-family: 'Butler-Light';
+    font-weight: normal;
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: #2D2D2D;
+    margin: 0;
   }
 
   p{
@@ -76,14 +86,52 @@
     color: #6E6E6E;
     letter-spacing: 1px;
   }
-  
+
+  button {
+    font-family: 'Gibson-SemiBold';
+    background-color: initial;
+    border: solid 1px rgba(187, 168, 103, 0.5);
+    color: rgba(187, 168, 103, 1);
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+  }
+
+  .linha-menu {
+    position: absolute;
+    left: 12px;
+    top: 87px;
+    width: 20px;
+    height: 1px;
+    background-color: rgba(187, 168, 103, 0.5);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transform-origin: 0px 0px 0px;
+    transform: translate3d(10px, 0px, 0px) scale(0, 0);
+  }
+
+  button:hover {
+    padding: 7px 20px 7px 40px;
+  }
+
+  button:hover .linha-menu {
+    transform: translate3d(0px, 0px, 0px) scale(1, 1);
+  }
+
+
 
 /*==========  Topo  ==========*/
 
   #topo {
     background-color: #fff;
     position: relative;
-    z-index: 1;
+    z-index: 2;
   }
 
   #topo img {
@@ -112,13 +160,13 @@
     left: 0;
     height: 0;
     width: 100%;
-    background-color: rgba(187, 168, 0, 0.2);
+    background-color: rgba(187, 168, 103, 0.3);
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
    }
 
   #topo .navbar-nav>li>a:hover::before {
-    height: 10px;
+    height: 6px;
    }
 
   #topo .nav>li>a:hover {
@@ -230,7 +278,7 @@
       background: url("../img/img-banner-home.jpg")  no-repeat center;
       background-size:cover;
       height: 300px;
-      z-index: -1;
+      z-index: 0;
   }
   
   #banner svg {
@@ -266,12 +314,12 @@
 
     /*==========  Topo  ==========*/
       .submenu {
-        background-color: #eee;
+        background-color: #FAFAFA;
         width: 100%;
         height: auto;
         position: fixed;
         left: 0;
-        z-index: 0;
+        z-index: 1;
         transform: translateY(-100%);
         -webkit-transform: translateY(-100%);
         transition: all 0.5s ease;
