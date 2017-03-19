@@ -55,6 +55,7 @@
 
   ul, li {
     margin: 0;
+    padding: 0;
   }
 
   strong {
@@ -87,6 +88,10 @@
     letter-spacing: 1px;
   }
 
+  a:hover, a:focus {
+    text-decoration: none;
+  }
+
 
 
 /*==========  Topo  ==========*/
@@ -115,43 +120,14 @@
     -webkit-transition: all 0.5s ease;
    }
 
-  #topo .navbar-nav>li>a::before {
-    display: inline-block;
-    content: "";
-    position: absolute;
-    bottom: 4px;
-    left: 0;
-    height: 0;
-    width: 100%;
-    background-color: rgba(187, 168, 103, 0.3);
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-   }
-
-  #topo .navbar-nav>li>a:hover::before {
-    height: 6px;
-   }
+  #topo .nav>li>a:focus {
+    background-color: inherit;
+  }
 
   #topo .nav>li>a:hover {
     text-decoration: none;
     background-color: inherit;
     color: #000;
-   }
-   
-  #topo .nav>li>a svg g g g polyline {
-    stroke:#6E6E6E;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-   }
-
-  #topo .nav>li>a:hover svg g g g polyline {
-    stroke:#000;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-   }
-
-  #topo .nav>li>a:focus {
-    background-color: inherit;
   }
 
   #topo .center {
@@ -215,12 +191,53 @@
 
 /*==========  Nav  ==========*/
 
-  #sub-menu .submenu-itens li {
-    margin: 0 15px;
-  }
-
   #sub-menu .submenu-itens p {
     font-size: 14px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+  }
+  
+  #sub-menu .submenu-itens li:nth-of-type(1):hover p {
+    color: #000;
+  }
+
+  #sub-menu .submenu-itens li:nth-of-type(2):hover p {
+    color: #000;
+  }
+
+  #sub-menu .submenu-itens li:nth-of-type(3):hover p {
+    color: #000;
+  }
+
+  #sub-menu .submenu-itens li:nth-of-type(4):hover p {
+    color: #000;
+  }
+
+  #sub-menu .submenu-itens li img{
+    transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+  }
+
+  #sub-menu .submenu-itens li:nth-of-type(1):hover img {
+    transform: scale(1.5,1.5);
+    -webkit-transform: scale(1.1,1.1);
+  }
+
+  #sub-menu .submenu-itens li:nth-of-type(2):hover img {
+    transform: scale(1.5,1.5);
+    -webkit-transform: scale(1.1,1.1);
+  }
+
+  #sub-menu .submenu-itens li:nth-of-type(3):hover img {
+    transform: scale(1.5,1.5);
+    -webkit-transform: scale(1.1,1.1);
+  }
+
+  #sub-menu .submenu-itens li:nth-of-type(4):hover img {
+    transform: scale(1.5,1.5);
+    -webkit-transform: scale(1.1,1.1);
   }
 
   #sub-menu .submenu-itens a {
@@ -234,12 +251,16 @@
     padding: 0;
   }
 
+  #sub-menu h3 {
+    padding-top: 6px;
+  }
+
   #sub-menu button {
     font-family: 'Gibson-SemiBold';
     background-color: initial;
     border: solid 1px rgba(187, 168, 103, 0.5);
     color: rgba(187, 168, 103, 1);
-    padding: 6px 16px;
+    padding: 5px 16px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -250,14 +271,14 @@
     -webkit-transition: all 0.5s ease;
     display: block;
     width: 180px;
-    height: 38px;
+    height: 36px;
   }
 
   #sub-menu button span {
     position: absolute;
     display: block;
     left: 20px;
-    bottom: 19px;
+    bottom: 18px;
     width: 25px;
     height: 1px;
     background-color: rgba(187, 168, 103, 0.5);
@@ -275,12 +296,26 @@
     transform: translate3d(0px, 0px, 0px) scale(1, 1);
   }
 
+  .submenu-itens>li {
+    list-style: none;
+    padding: 8px 25px;
+  }
+
+  .submenu-itens>li>a>p {
+    margin: 0;
+  }
+
+  .submenu-itens>li>a>p:hover {
+    color: #000;
+  }
+
 /*==========  Banner  ==========*/
 
   #banner{
       position: relative;
       background: url("../img/img-banner-home.jpg")  no-repeat center;
       background-size:cover;
+      background-color: #E4E4DC;
       height: 300px;
       z-index: 0;
   }
@@ -337,10 +372,50 @@
       }
 
       .submenu-itens>li {
+        margin: 0 9px;
+        padding: 0;
         list-style: none;
         position: relative;
         display: block;
         float: left;
+      }
+
+      .submenu-itens>li>a>p {
+        margin: 0 0 10px;
+      }
+
+      #topo .navbar-nav>li>a::before {
+        display: inline-block;
+        content: "";
+        position: absolute;
+        bottom: 4px;
+        left: 0;
+        height: 0;
+        width: 100%;
+        background-color: rgba(187, 168, 103, 0.3);
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+      }
+
+      #topo .navbar-nav>li>a:hover::before {
+        height: 6px;
+      }
+      
+      #topo .nav>li>a svg g g g polyline {
+        stroke:#6E6E6E;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+      }
+
+      #topo .nav>li>a:hover svg g g g polyline {
+        stroke:#000;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+      }
+
+      #topo .nav>li>a {
+        padding: 0 0;
+        margin: 15px 15px;
       }
 
       #topo .menu-casamento {
@@ -416,6 +491,12 @@
         width: 70%;
       }
 
+    /*==========  Nav  ==========*/
+      
+      #sub-menu .submenu-itens li {
+        margin: 0 15px;
+      }
+
     /*==========  Banner  ==========*/
       #banner{
         height: 550px;
@@ -453,6 +534,12 @@
       #topo .center {
         margin: auto;
         width: 58%;
+      }
+
+    /*==========  Nav  ==========*/
+      
+      #sub-menu .submenu-itens li {
+        margin: 0 15px;
       }
 
     /*==========  Banner  ==========*/
