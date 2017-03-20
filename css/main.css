@@ -191,7 +191,7 @@
       -ms-transform: rotate(-45deg);
   }
 
-/*==========  Nav  ==========*/
+/*==========  Sub-Nav  ==========*/
 
   #sub-menu .submenu-itens p {
     font-size: 14px;
@@ -338,7 +338,7 @@
       transform: translateY(140px);
       -webkit-transform: translateY(140px);
   }
-
+/*==========  Produtos  ==========*/
 /*==========  Mobile First Method  ==========*/
 
     /* Custom, iPhone Retina */ 
@@ -370,7 +370,7 @@
         background-color: #FAFAFA;
         width: 100%;
         height: auto;
-        position: fixed;
+        position: absolute;
         left: 0;
         z-index: 1;
         transform: translateY(-100%);
@@ -580,6 +580,15 @@
         font-size: 56px;
         line-height: 60px;
       }
+      .container-fluid {
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+      .linha-2 {
+        margin-top: 2%;
+        background-color:#BBA867;
+      }
+
     
     /*==========  Topo  ==========*/
       #topo .center {
