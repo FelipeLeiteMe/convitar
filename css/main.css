@@ -72,10 +72,19 @@
     color: #2D2D2D;
   }
 
-  h3 {
+  h2 {
     font-family: 'Butler-Light';
     font-weight: normal;
     font-size: 32px;
+    letter-spacing: 1px;
+    color: #2D2D2D;
+    margin: 0;
+  }
+
+  h3 {
+    font-family: 'Butler-Light';
+    font-weight: normal;
+    font-size: 24px;
     letter-spacing: 1px;
     color: #2D2D2D;
     margin: 0;
@@ -91,8 +100,6 @@
   a:hover, a:focus {
     text-decoration: none;
   }
-
-
 
 /*==========  Topo  ==========*/
 
@@ -322,6 +329,10 @@
     color: #000;
   }
 
+  .submenu-itens>li>a>h2 {
+    margin-top: 8px;
+  }
+
 /*==========  Banner  ==========*/
 
   #banner{
@@ -339,6 +350,110 @@
       -webkit-transform: translateY(140px);
   }
 /*==========  Produtos  ==========*/
+
+  figure.img-casamento {
+    color: #fff;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    background: #000;
+    text-align: left;
+  }
+  figure.img-casamento * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  figure.img-casamento img {
+    max-width: 100%;
+    opacity: 1;
+    width: 100%;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+    transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    -ms-transform: scale(1,1);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+  }
+  figure.img-casamento figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px 3em;
+    width: 100%;
+    height: 100%;
+  }
+  figure.img-casamento figcaption::before {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 100%;
+    content: '';
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+  }
+  figure.img-casamento h2,
+  figure.img-casamento p {
+    color: #fff;
+    margin: 0 0 5px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+  }
+  figure.img-casamento h2 {
+    -webkit-transform: translate3d(30%, 0%, 0);
+    transform: translate3d(30%, 0%, 0);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  figure.img-casamento p {
+    -webkit-transform: translate3d(0%, 30%, 0);
+    transform: translate3d(0%, 30%, 0);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  figure.img-casamento a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+  }
+  figure.img-casamento:hover img {
+    opacity: 0.3;
+    transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+  }
+  figure.img-casamento:hover figcaption h2 {
+    opacity: 1;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+  }
+  figure.img-casamento:hover figcaption p {
+    opacity: 0.9;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+  }
+  figure.img-casamento:hover figcaption::before {
+    background: rgba(255, 255, 255, 0);
+    left: 30px;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+
+
 /*==========  Mobile First Method  ==========*/
 
     /* Custom, iPhone Retina */ 
@@ -505,7 +620,20 @@
             -webkit-transform: translateY(40px);
             }
       }
-    
+    /*==========  Produtos  ==========*/
+      #produtos .container-fluid {
+        padding-left: 35px;
+        padding-right: 35px;
+      }
+      
+       #produtos .linha-2 {
+        margin-top: 3%;
+        background-color:#BBA867;
+      }
+
+      #produtos p {
+        padding-top: 10px;
+      }
 
     }
 
@@ -569,6 +697,21 @@
             -webkit-transform: translateY(100px);
             }
       }
+      
+    /*==========  Produtos  ==========*/
+       #produtos .container-fluid {
+          padding-left: 45px;
+          padding-right: 45px;
+        }
+      
+       #produtos .linha-2 {
+          margin-top: 3%;
+          background-color:#BBA867;
+        }
+        
+        #produtos h3 {
+          font-size: 38px;
+        }
     
     }
 
@@ -580,15 +723,6 @@
         font-size: 56px;
         line-height: 60px;
       }
-      .container-fluid {
-        padding-left: 80px;
-        padding-right: 80px;
-      }
-      .linha-2 {
-        margin-top: 2%;
-        background-color:#BBA867;
-      }
-
     
     /*==========  Topo  ==========*/
       #topo .center {
@@ -641,5 +775,16 @@
             -webkit-transform: translateY(140px);
           }
       }
+      
+    /*==========  Produtos  ==========*/
+        /*==========  Produtos  ==========*/
+        #produtos .container-fluid {
+          padding-left: 80px;
+          padding-right: 80px;
+        }
 
+       #produtos .linha-2 {
+        margin-top: 2%;
+        background-color:#BBA867;
+      }
     }
