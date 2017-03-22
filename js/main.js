@@ -1,8 +1,3 @@
-$(window).load(function() {
-    $(".loader").fadeOut("slow");
-    $(".bg-branco").addClass("anima-y");
-})
-
 $(document).ready(function () {
     
     var menu = $("a[hreflang|='menu']");
@@ -18,7 +13,5 @@ $(document).ready(function () {
     $(".navbar-toggle").on("click", function () {
         $(this).toggleClass("active");
     });
-    
-    
 
 });
